@@ -1,4 +1,4 @@
-# Obsidian Plugin for Clearing Unused Images
+# Obsidian Plugin for Clearing Unused Images Plus
 
 This plugin helps you to keep your vault clean by deleting the images you are not referencing in your markdown notes anymore.
 
