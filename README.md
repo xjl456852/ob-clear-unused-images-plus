@@ -10,9 +10,9 @@ In case any of these image files are not referenced in any document of the vault
 
 ### Deleted Image Destination
 
-Please make sure that you select the destination for the deleted images under "Clear Unused Images Settings" tab. You have 3 options:
+Please make sure that you select the destination for the deleted images under "Clear Unused Images Plus Settings" tab. You have 3 options:
 
-<img src="https://github.com/ozntel/oz-clear-unused-images-obsidian/blob/master/images/delete-destination.png?raw=true">
+<img src="https://github.com/xjl456852/ob-clear-unused-images-plus/blob/master/images/delete-destination.png?raw=true">
 
 1. **Move to Obsidian Trash** - Files are going to be moved to the `.trash` under the Obsidian Vault.
 
@@ -24,11 +24,11 @@ Please make sure that you select the destination for the deleted images under "C
 
 You can exclude folders, from which you don't want images to be removed during the scan. In case there are multiple folders to be excluded, you can divide them by comma. Please ensure you provide the full path in Vault:
 
-<img src="https://github.com/ozntel/oz-clear-unused-images-obsidian/blob/master/images/excluded-folders.png?raw=true">
+<img src="https://github.com/xjl456852/ob-clear-unused-images-plus/blob/master/images/excluded-folders.png?raw=true">
 
 You can now exclude all subfolders under the folder paths provided above:
 
-<img src="https://github.com/ozntel/oz-clear-unused-images-obsidian/blob/master/images/exclude-subfolders.png?raw=true">
+<img src="https://github.com/xjl456852/ob-clear-unused-images-plus/blob/master/images/exclude-subfolders.png?raw=true">
 
 ## How to use
 
@@ -38,19 +38,19 @@ You can now exclude all subfolders under the folder paths provided above:
 
     - Activate the Ribbon Icon from plugin settings and click Icon from Left Ribbon for running the clean up:
 
-    <img src="https://user-images.githubusercontent.com/55187568/118400231-0ceeed80-b661-11eb-9b07-7e22fab02694.png">
+    <img src="https://github.com/xjl456852/ob-clear-unused-images-plus/raw/master/images/ribbon-icon.png">
 
-    - Or use Ribbon Icon or Open Command Palette (Using `Ctrl/Cmd + P` or from Ribbon) Run "Clear Unused Images".
+    - Or use Ribbon Icon or Open Command Palette (Using `Ctrl/Cmd + P` or from Ribbon) Run "Clear Unused Images Plus".
 
-    <img src="https://github.com/ozntel/oz-clear-unused-images-obsidian/raw/master/images/Clear-Command.png">
+    <img src="https://github.com/xjl456852/ob-clear-unused-images-plus/raw/master/images/Clear-Command.png">
 
 3. If you have turned on "Delete Logs" option in plugin settings, you will see a modal popping up with an information which images are deleted from your vault:
 
-<img src="https://github.com/ozntel/oz-clear-unused-images-obsidian/raw/master/images/logs-modal.png">
+<img src="https://github.com/xjl456852/ob-clear-unused-images-plus/raw/master/images/logs-modal.png">
 
 In case all images are used, you will see communication as below:
 
-<img src="https://github.com/ozntel/oz-clear-unused-images-obsidian/raw/master/images/nothing-deleted.png">
+<img src="https://github.com/xjl456852/ob-clear-unused-images-plus/raw/master/images/nothing-deleted.png">
 
 **Scanned Image Formats** : jpg, jpeg, png, gif, svg, bmp, webp, tiff, heic, raw
 

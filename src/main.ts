@@ -9,24 +9,24 @@ export default class OzanClearImages extends Plugin {
     ribbonIconEl: HTMLElement | undefined = undefined;
 
     async onload() {
-        console.log('Clear Unused Images plugin loaded...');
+        console.log('Clear Unused Images Plus plugin loaded...');
         this.addSettingTab(new OzanClearImagesSettingsTab(this.app, this));
         await this.loadSettings();
         this.addCommand({
-            id: 'clear-images-obsidian',
-            name: 'Clear Unused Images',
+            id: 'clear-images-obsidian-plus',
+            name: 'Clear Unused Images Plus',
             callback: () => this.clearUnusedAttachments('image'),
         });
         this.addCommand({
-            id: 'clear-unused-attachments',
-            name: 'Clear Unused Attachments',
+            id: 'clear-unused-attachments-plus',
+            name: 'Clear Unused Attachments Plus',
             callback: () => this.clearUnusedAttachments('all'),
         });
         this.refreshIconRibbon();
     }
 
     onunload() {
-        console.log('Clear Unused Images plugin unloaded...');
+        console.log('Clear Unused Images Plus plugin unloaded...');
     }
 
     async loadSettings() {
@@ -40,7 +40,7 @@ export default class OzanClearImages extends Plugin {
     refreshIconRibbon = () => {
         this.ribbonIconEl?.remove();
         if (this.settings.ribbonIcon) {
-            this.ribbonIconEl = this.addRibbonIcon('image-file', 'Clear Unused Images', (event): void => {
+            this.ribbonIconEl = this.addRibbonIcon('image-file', 'Clear Unused Images Plus', (event): void => {
                 this.clearUnusedAttachments('image');
             });
         }

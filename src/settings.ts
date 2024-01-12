@@ -28,7 +28,7 @@ export class OzanClearImagesSettingsTab extends PluginSettingTab {
     display(): void {
         let { containerEl } = this;
         containerEl.empty();
-        containerEl.createEl('h2', { text: 'Clear Images Settings' });
+        containerEl.createEl('h2', { text: 'Clear Images Plus Settings' });
 
         new Setting(containerEl)
             .setName('Ribbon Icon')
@@ -92,10 +92,10 @@ export class OzanClearImagesSettingsTab extends PluginSettingTab {
 
         const coffeeDiv = containerEl.createDiv('coffee');
         coffeeDiv.addClass('oz-coffee-div');
-        const coffeeLink = coffeeDiv.createEl('a', { href: 'https://ko-fi.com/L3L356V6Q' });
+        const coffeeLink = coffeeDiv.createEl('a', { href: 'https://www.buymeacoffee.com/xiejl' });
         const coffeeImg = coffeeLink.createEl('img', {
             attr: {
-                src: 'https://cdn.ko-fi.com/cdn/kofi2.png?v=3',
+                src: 'https://img.buymeacoffee.com/button-api/?text=Buy%20me%20a%20coffee%20&emoji=&slug=Xiejl&button_colour=BD5FFF&font_colour=ffffff&font_family=Poppins&outline_colour=000000&coffee_colour=FFDD00',
             },
         });
         coffeeImg.height = 45;
