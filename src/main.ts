@@ -1,16 +1,16 @@
 import { Plugin, TFile, Notice } from 'obsidian';
-import { OzanClearImagesSettingsTab } from './settings';
-import { OzanClearImagesSettings, DEFAULT_SETTINGS } from './settings';
+import { ObClearImagesSettingsTab } from './settings';
+import { ObClearImagesSettings, DEFAULT_SETTINGS } from './settings';
 import { LogsModal } from './modals';
 import * as Util from './util';
 
-export default class OzanClearImages extends Plugin {
-    settings: OzanClearImagesSettings;
+export default class ObClearImages extends Plugin {
+    settings: ObClearImagesSettings;
     ribbonIconEl: HTMLElement | undefined = undefined;
 
     async onload() {
         console.log('Clear Unused Images Plus plugin loaded...');
-        this.addSettingTab(new OzanClearImagesSettingsTab(this.app, this));
+        this.addSettingTab(new ObClearImagesSettingsTab(this.app, this));
         await this.loadSettings();
         this.addCommand({
             id: 'clear-images-obsidian-plus',

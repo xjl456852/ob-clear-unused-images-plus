@@ -1,7 +1,7 @@
-import OzanClearImages from './main';
+import ObClearImages from './main';
 import { PluginSettingTab, Setting, App } from 'obsidian';
 
-export interface OzanClearImagesSettings {
+export interface ObClearImagesSettings {
     deleteOption: string;
     logsModal: boolean;
     excludedFolders: string;
@@ -9,7 +9,7 @@ export interface OzanClearImagesSettings {
     excludeSubfolders: boolean;
 }
 
-export const DEFAULT_SETTINGS: OzanClearImagesSettings = {
+export const DEFAULT_SETTINGS: ObClearImagesSettings = {
     deleteOption: '.trash',
     logsModal: true,
     excludedFolders: '',
@@ -17,10 +17,10 @@ export const DEFAULT_SETTINGS: OzanClearImagesSettings = {
     excludeSubfolders: false,
 };
 
-export class OzanClearImagesSettingsTab extends PluginSettingTab {
-    plugin: OzanClearImages;
+export class ObClearImagesSettingsTab extends PluginSettingTab {
+    plugin: ObClearImages;
 
-    constructor(app: App, plugin: OzanClearImages) {
+    constructor(app: App, plugin: ObClearImages) {
         super(app, plugin);
         this.plugin = plugin;
     }

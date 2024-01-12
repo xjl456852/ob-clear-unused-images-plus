@@ -1,5 +1,5 @@
 import { App, TFile } from 'obsidian';
-import OzanClearImages from './main';
+import ObClearImages from './main';
 import { getAllLinkMatchesInFile, LinkMatch } from './linkDetector';
 
 /* ------------------ Image Handlers  ------------------ */
@@ -118,7 +118,7 @@ const pathIsAnImage = (path: string) => {
 // Clear Images From the Provided List
 export const deleteFilesInTheList = async (
     fileList: TFile[],
-    plugin: OzanClearImages,
+    plugin: ObClearImages,
     app: App
 ): Promise<{ deletedImages: number; textToView: string }> => {
     var deleteOption = plugin.settings.deleteOption;
@@ -145,7 +145,7 @@ export const deleteFilesInTheList = async (
 };
 
 // Check if File is Under Excluded Folders
-const fileIsInExcludedFolder = (file: TFile, plugin: OzanClearImages): boolean => {
+const fileIsInExcludedFolder = (file: TFile, plugin: ObClearImages): boolean => {
     var excludedFoldersSettings = plugin.settings.excludedFolders;
     var excludeSubfolders = plugin.settings.excludeSubfolders;
     if (excludedFoldersSettings === '') {
